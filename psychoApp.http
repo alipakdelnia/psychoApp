@@ -1,0 +1,6 @@
+@psychoApp_HostAddress = http://localhost:5087
+
+GET {{psychoApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
