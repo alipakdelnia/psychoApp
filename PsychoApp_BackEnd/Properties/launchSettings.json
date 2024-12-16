@@ -1,27 +1,4 @@
-<<<<<<< HEAD
 {
-  "profiles": {
-    "http": {
-      "commandName": "Project",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "dotnetRunMessages": true,
-      "applicationUrl": "http://192.168.90.25:5087"
-    },
-    "https": {
-      "commandName": "Project",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "dotnetRunMessages": true,
-      "applicationUrl": "https://192.168.90.25:7177;http://192.168.90.25:5087"
-    },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-=======
-﻿{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
     "http": {
@@ -38,12 +15,10 @@
       "dotnetRunMessages": true,
       "launchBrowser": false,
       "applicationUrl": "https://localhost:7177;http://localhost:5087",
->>>>>>> 98d3c957708bcee2e752ba1b932e03fc0f525415
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
-<<<<<<< HEAD
   },
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
@@ -55,7 +30,3 @@
     }
   }
 }
-=======
-  }
-}
->>>>>>> 98d3c957708bcee2e752ba1b932e03fc0f525415

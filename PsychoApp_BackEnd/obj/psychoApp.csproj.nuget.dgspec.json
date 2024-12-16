@@ -1,54 +1,26 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\usersrd3pc\\source\\repos\\alipakdelnia\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj": {}
+    "C:\\Users\\user\\Documents\\GitHub\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usersrd3pc\\source\\repos\\alipakdelnia\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj": {
+    "C:\\Users\\user\\Documents\\GitHub\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usersrd3pc\\source\\repos\\alipakdelnia\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj",
         "projectName": "psychoApp",
-        "projectPath": "C:\\Users\\usersrd3pc\\source\\repos\\alipakdelnia\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj",
-        "packagesPath": "C:\\Users\\usersrd3pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usersrd3pc\\source\\repos\\alipakdelnia\\psychoApp\\PsychoApp_BackEnd\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\usersrd3pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
-    "C:\\Users\\user\\psychoApp\\psychoApp.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\user\\psychoApp\\psychoApp.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\user\\psychoApp\\psychoApp.csproj",
-        "projectName": "psychoApp",
-        "projectPath": "C:\\Users\\user\\psychoApp\\psychoApp.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\psychoApp\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\psychoApp\\PsychoApp_BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> 98d3c957708bcee2e752ba1b932e03fc0f525415
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-<<<<<<< HEAD
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/": {}
-=======
           "https://api.nuget.org/v3/index.json": {}
->>>>>>> 98d3c957708bcee2e752ba1b932e03fc0f525415
         },
         "frameworks": {
           "net9.0": {
@@ -64,11 +36,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-<<<<<<< HEAD
-          "auditMode": "all"
-=======
           "auditMode": "direct"
->>>>>>> 98d3c957708bcee2e752ba1b932e03fc0f525415
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -90,13 +58,6 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-<<<<<<< HEAD
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-=======
->>>>>>> 98d3c957708bcee2e752ba1b932e03fc0f525415
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[7.2.0, )"
@@ -121,11 +82,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
->>>>>>> 98d3c957708bcee2e752ba1b932e03fc0f525415
         }
       }
     }
