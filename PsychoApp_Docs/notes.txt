@@ -1,0 +1,2 @@
+
+    // "DefaultConnection": "Data Source=DESKTOP-8521BUG;Initial Catalog=psycho_db;User ID=usersrd3pc;Password=ff@1234;TrustServerCertificate=True;"
