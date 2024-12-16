@@ -155,6 +155,7 @@ C:\Users\user\psychoApp\obj\Debug\net9.0\ref\psychoApp.dll
 C:\Users\user\psychoApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\user\psychoApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\user\psychoApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+<<<<<<< HEAD
 C:\Users\usersrd3pc\source\repos\alipakdelnia\psychoApp\PsychoApp_BackEnd\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\usersrd3pc\source\repos\alipakdelnia\psychoApp\PsychoApp_BackEnd\bin\Debug\net9.0\appsettings.json
 C:\Users\usersrd3pc\source\repos\alipakdelnia\psychoApp\PsychoApp_BackEnd\bin\Debug\net9.0\psychoApp.staticwebassets.endpoints.json
@@ -421,3 +422,5 @@ C:\Users\usersrd3pc\source\repos\alipakdelnia\psychoApp\PsychoApp_BackEnd\bin\De
 C:\Users\usersrd3pc\source\repos\alipakdelnia\psychoApp\PsychoApp_BackEnd\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\usersrd3pc\source\repos\alipakdelnia\psychoApp\PsychoApp_BackEnd\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\usersrd3pc\source\repos\alipakdelnia\psychoApp\PsychoApp_BackEnd\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+=======
+>>>>>>> 98d3c957708bcee2e752ba1b932e03fc0f525415

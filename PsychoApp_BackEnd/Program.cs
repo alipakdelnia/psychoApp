@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
 using psychoApp.Data;
 using psychoApp.Models;
@@ -9,6 +10,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddControllers();
 
+=======
+var builder = WebApplication.CreateBuilder(args);
+
+>>>>>>> 98d3c957708bcee2e752ba1b932e03fc0f525415
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -47,8 +52,11 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+<<<<<<< HEAD
 app.MapControllers();
 
+=======
+>>>>>>> 98d3c957708bcee2e752ba1b932e03fc0f525415
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
