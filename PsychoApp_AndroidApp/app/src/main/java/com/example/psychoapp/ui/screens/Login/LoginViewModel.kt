@@ -23,19 +23,19 @@ class RegisterViewModel @Inject constructor(
     val response: LiveData<SignUpResponse> get() = _response
 
     fun registerUser(user: User) {
-        var user1 = User(
-            firstName = "ali",
-            lastName = "ali",
-            username = "ali5",
-            email = "ali5",
-            passwordHash = "alisd",
-            lastLogin = "2024-12-17T18:21:46.750Z",
-            createdDate = "2024-12-17T18:21:46.750Z"
+        var userRequest = User(
+            firstName = user.firstName,
+            lastName = user.lastName,
+            username = user.username,
+            email = user.email,
+            passwordHash = user.passwordHash,
+            lastLogin = user.lastLogin,
+            createdDate = user.createdDate
         )
         viewModelScope.launch {
             try {
 
-                val signUpResponse = userRepository.registerUser(user1)
+                val signUpResponse = userRepository.registerUser(userRequest)
                 _response.value = signUpResponse
 
                 Log.v("logloginresponse", signUpResponse.message.toString())

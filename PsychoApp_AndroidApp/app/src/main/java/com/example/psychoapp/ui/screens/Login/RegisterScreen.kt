@@ -18,7 +18,10 @@ import com.example.psychoapp.model.data.login.User
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun RegisterScreen(navController: NavHostController, viewModel: RegisterViewModel = hiltViewModel()) {
+fun RegisterScreen(
+    navController: NavHostController,
+    viewModel: RegisterViewModel = hiltViewModel()
+) {
     var firstName by remember { mutableStateOf("") }
     var lastName by remember { mutableStateOf("") }
     var username by remember { mutableStateOf("") }
@@ -96,7 +99,15 @@ fun RegisterScreen(navController: NavHostController, viewModel: RegisterViewMode
                 Button(
                     onClick = {
                         // Trigger ViewModel to call API
-                        val user = User(firstName, lastName, username, email, password, "234","234")
+                        val user = User(
+                            firstName = firstName,
+                            lastName = lastName,
+                            username = username,
+                            email = email,
+                            passwordHash = password,
+                            lastLogin = "2024-12-17T18:21:46.750Z",
+                            createdDate = "2024-12-17T18:21:46.750Z"
+                        )
                         viewModel.registerUser(user)
                     },
                     modifier = Modifier.fillMaxWidth()
@@ -114,7 +125,7 @@ fun RegisterScreen(navController: NavHostController, viewModel: RegisterViewMode
                 // Show Toast if response is received
                 LaunchedEffect(response) {
 
-                        Toast.makeText(context, response?.message.toString(), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, response?.message.toString(), Toast.LENGTH_SHORT).show()
 
                 }
             }
