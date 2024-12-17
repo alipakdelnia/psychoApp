@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using psychoApp.Data;
 using psychoApp.Models;
+using psychoApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<TokenService>();
 
 var app = builder.Build();
 

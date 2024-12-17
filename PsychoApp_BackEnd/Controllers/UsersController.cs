@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using psychoApp.Data;
 using psychoApp.Models;
+using psychoApp.Services;
 
 namespace psychoApp.Controllers
 {
@@ -15,10 +16,12 @@ namespace psychoApp.Controllers
     public class UsersController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly TokenService _tokenService;
 
-        public UsersController(AppDbContext context)
+        public UsersController(AppDbContext context, TokenService tokenService)
         {
             _context = context;
+            _tokenService = tokenService;
         }
 
         // GET: api/Users
@@ -82,6 +85,48 @@ namespace psychoApp.Controllers
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetUser", new { id = user.Id }, user);
+        }
+
+        //POST: api/Users/register
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(User user)
+        {
+            var existingUser = await _context.Users
+            .FirstOrDefaultAsync(u => u.Username == user.Username || u.Email == user.Email);
+
+
+            if (existingUser != null)
+            {
+
+                return Ok(new
+                {
+                    Success = false,
+                    Message = "این نام کاربری یا ایمیل قبلا ثبت نام کرده است.",
+                    Date = (object)null
+                });
+
+            }
+
+            user.CreatedDate = DateTime.UtcNow;
+            user.LastLogin = DateTime.UtcNow;
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+
+
+            string token = _tokenService.GenerateToken(user.Username);
+            string refreshToken = Guid.NewGuid().ToString();
+
+            return Ok(new
+            {
+                Success = true,
+                Message = $"{user.FirstName} عزیز، ثبت‌نام شما با موفقیت انجام شد.",
+                Date = new
+                {
+                    Token = token,
+                    RefreshToken = refreshToken
+                }
+            });
+
         }
 
         // DELETE: api/Users/5
