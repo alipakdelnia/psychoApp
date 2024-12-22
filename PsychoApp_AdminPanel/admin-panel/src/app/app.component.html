@@ -5,15 +5,24 @@
       <thead>
         <tr class="bg-gray-200">
           <th class="border border-gray-300 px-4 py-2">#</th>
-          <th class="border border-gray-300 px-4 py-2">Name</th>
-          <th class="border border-gray-300 px-4 py-2">Email</th>
+          <th class="border border-gray-300 px-4 py-2">Id</th>
+          <th class="border border-gray-300 px-4 py-2">username</th>
+          <th class="border border-gray-300 px-4 py-2">firstname</th>
+          <th class="border border-gray-300 px-4 py-2">lastName</th>
+          <th class="border border-gray-300 px-4 py-2">email</th>
+          <th class="border border-gray-300 px-4 py-2">ceatedDate</th>
+          <th class="border border-gray-300 px-4 py-2">LoginDate</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let user of users; let i = index" class="hover:bg-gray-100">
-          <td class="border border-gray-300 px-4 py-2 text-center">{{ i + 1 }}</td>
-          <td class="border border-gray-300 px-4 py-2">{{ user.name }}</td>
+          <td class="border border-gray-300 px-4 py-2">{{ user.id }}</td>
+          <td class="border border-gray-300 px-4 py-2">{{ user.username }}</td>
+          <td class="border border-gray-300 px-4 py-2">{{ user.firstName }}</td>
+          <td class="border border-gray-300 px-4 py-2">{{ user.lastName }}</td>
           <td class="border border-gray-300 px-4 py-2">{{ user.email }}</td>
+          <td class="border border-gray-300 px-4 py-2">{{ user.createdDate }}</td>
+          <td class="border border-gray-300 px-4 py-2">{{ user.lastLogin }}</td>
         </tr>
       </tbody>
     </table>
