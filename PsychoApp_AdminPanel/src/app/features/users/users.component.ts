@@ -1,11 +1,12 @@
 import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from './users.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-users',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor,RouterModule],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
 })

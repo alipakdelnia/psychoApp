@@ -150,7 +150,7 @@
             class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white hover:from-pink-500 hover:to-orange-500 flex items-center justify-center"
             title="{{ user.username }}"
           >
-            {{ user.username[0].toUpperCase() }}
+            {{ user.username[0] }}
           </div>
           
           <div class="ps-3">
@@ -172,8 +172,8 @@
           </td>
         <td class="px-6 py-4">
           <a
-            href="#"
-            class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+            [routerLink]="['/edit-user', user.id]"
+            class="font-medium text-blue-500 dark:text-blue-700 hover:underline"
             >Edit user</a
           >
         </td>

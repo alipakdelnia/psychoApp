@@ -7,11 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class UsersService {
 
-  private apiUrl = 'http://localhost:5087/api/users'; // URL سرور
-
   constructor(private http: HttpClient) {}
 
   getUsers(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl);
+    return this.http.get<any[]>("http://localhost:5087/api/users");
   }
+
 }

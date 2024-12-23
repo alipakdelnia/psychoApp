@@ -52,7 +52,7 @@ namespace psychoApp.Controllers
         {
             if (id != user.Id)
             {
-                return BadRequest();
+                return BadRequest(new {message = "User ID does not match."});
             }
 
             _context.Entry(user).State = EntityState.Modified;
@@ -65,7 +65,7 @@ namespace psychoApp.Controllers
             {
                 if (!UserExists(id))
                 {
-                    return NotFound();
+                    return NotFound(new {message = "User not found."});
                 }
                 else
                 {
@@ -73,7 +73,7 @@ namespace psychoApp.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(new {Success=true,message = "User updated successfully.",updatedUser = user});
         }
 
         // POST: api/Users

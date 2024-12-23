@@ -1,33 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj": {}
+    "C:\\Users\\user\\Documents\\GitHub\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj": {}
   },
   "projects": {
-    "C:\\src\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj": {
+    "C:\\Users\\user\\Documents\\GitHub\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj",
         "projectName": "psychoApp",
-        "projectPath": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj",
-        "packagesPath": "C:\\Users\\usersrd3pc\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\obj\\",
+        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\psychoApp\\PsychoApp_BackEnd\\psychoApp.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\psychoApp\\PsychoApp_BackEnd\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\usersrd3pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -43,7 +36,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -89,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
