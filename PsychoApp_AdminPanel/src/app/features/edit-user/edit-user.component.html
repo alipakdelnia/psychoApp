@@ -1,54 +1,54 @@
-<div class="max-w-lg mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
-    <h2 class="text-xl font-bold mb-4">Edit User {{ userId }} </h2>
+<div class="max-w-lg mx-auto mt-10 p-6 dark:bg-gray-900 shadow-lg rounded-lg">
+    <h2 class="text-xl font-bold mb-4 dark:text-white">Edit User {{ userId }} </h2>
     <form [formGroup]="editForm" (ngSubmit)="onSubmit()" >
       <div class="mb-4">
-        <label class="block text-gray-700 font-medium mb-2" for="firstName">First Name</label>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="firstName">First Name</label>
         <input
           id="firstName"
           type="text"
           formControlName="firstName"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
           placeholder="Enter first name"
         />
       </div>
       <div class="mb-4">
-        <label class="block text-gray-700 font-medium mb-2" for="lastName">Last Name</label>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="lastName">Last Name</label>
         <input
           id="lastName"
           type="text"
           formControlName="lastName"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
           placeholder="Enter last name"
         />
       </div>
       <div class="mb-4">
-        <label class="block text-gray-700 font-medium mb-2" for="username">Username</label>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="username">Username</label>
         <input
           id="username"
           type="text"
           formControlName="username"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
           placeholder="Enter username"
         />
       </div>
       <div class="mb-4">
-        <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="email">Email</label>
         <input
           id="email"
           type="text"
           formControlName="email"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
           placeholder="Enter email"
         />
       </div>
       
       <div class="mb-4">
-        <label class="block text-gray-700 font-medium mb-2" for="passwordHash">Password</label>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="passwordHash">Password</label>
         <input
           id="passwordHash"
           type="text"
           formControlName="passwordHash"
-          class="w-full px-3 py-2 border rounded-lg"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
           placeholder="Enter password"
         />
       </div>
