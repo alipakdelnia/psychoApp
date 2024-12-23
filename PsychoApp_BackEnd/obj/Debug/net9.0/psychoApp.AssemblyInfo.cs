@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("psychoApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8c656890bed6adcc3c6ccf59f7ec1cb898caff6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f49d2ee101da744dc3ec3bc42b0eaa61ae881ceb")]
 [assembly: System.Reflection.AssemblyProductAttribute("psychoApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("psychoApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
