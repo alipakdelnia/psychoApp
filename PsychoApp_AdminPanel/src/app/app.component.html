@@ -1,19 +1,30 @@
-<div class="flex justify-between items-center p-4 bg-blue-500 text-white">
-    <h1 class="text-lg font-bold">Admin Panel</h1>
-    <div>
-      <button
-        class="px-4 py-2 bg-gray-100 text-blue-500 rounded-md mr-2"
-        (click)="setLanguage('en')"
-      >
-        English
-      </button>
-      <button
-        class="px-4 py-2 bg-gray-100 text-blue-500 rounded-md"
-        (click)="setLanguage('fa')"
-      >
-        فارسی
-      </button>
+<div>
+    <div class="flex justify-between items-center p-4 bg-blue-500 text-white">
+      <h1 class="text-lg font-bold">
+        {{ 'ADMIN_PANEL' | translate }}
+      </h1>
+      <div>
+        <button
+          class="px-4 py-2 bg-gray-100 text-blue-500 rounded-md mr-2"
+          (click)="switchLanguage('en')"
+        >
+          English
+        </button>
+        <button
+          class="px-4 py-2 bg-gray-100 text-blue-500 rounded-md"
+          (click)="switchLanguage('fa')"
+        >
+          فارسی
+        </button>
+      </div>
+    </div>
+  
+    <div class="p-4">
+      <p class="text-xl">
+        {{ 'WELCOME' | translate }}
+      </p>
     </div>
   </div>
+  
   
 <router-outlet />
