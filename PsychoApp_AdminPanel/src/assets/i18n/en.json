@@ -15,6 +15,10 @@
     "LAST_NAME": "Last Name",
     "USERNAME": "Username",
     "PASSWORD": "Password",
-    "UPDATE_USER": "Update User"
+    "UPDATE_USER": "Update User",
+    "DELETE_USER": "Delete User",
+    "ADD_NEW_USER": "Add New User",
+    "ENTER": "Enter",
+    "SUBMIT":"Submit"
   }
   

@@ -15,6 +15,10 @@
     "LAST_NAME": "نام خانوادگی",
     "USERNAME": "نام کاربری",    
     "PASSWORD": "رمز عبور",
-    "UPDATE_USER": "ویرایش کاربر"
+    "UPDATE_USER": "ویرایش کاربر",
+    "DELETE_USER": "حذف کاربر",
+    "ADD_NEW_USER": "افزودن کاربر جدید",
+    "ENTER": "وارد کردن",
+    "SUBMIT":"ثبت"
   }
   

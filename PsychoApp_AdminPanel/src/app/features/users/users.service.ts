@@ -13,4 +13,8 @@ export class UsersService {
     return this.http.get<any[]>("http://localhost:5087/api/users");
   }
 
+  addUser(user: any): Observable<any> {
+    return this.http.post<any>("http://localhost:5087/api/users", user);
+  }
+
 }

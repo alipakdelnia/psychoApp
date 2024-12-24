@@ -1,21 +1,22 @@
 import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from './users.service';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-users',
   standalone: true,
-  imports: [NgFor,RouterModule,TranslatePipe],
+  imports: [NgFor, TranslatePipe, RouterModule],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
 })
-export class UsersComponent implements OnInit{
+export class UsersComponent implements OnInit {
   users: any[] = [];
 
-  constructor(private usersService: UsersService,private translate: TranslateService) {
-    
+  constructor(private usersService: UsersService, private translate: TranslateService,private router: Router) {
+
   }
 
   ngOnInit(): void {
@@ -24,5 +25,8 @@ export class UsersComponent implements OnInit{
     );
   }
 
+  addNewUser() {
+    this.router.navigate(['add-new-user'])
+  }
 
 }
