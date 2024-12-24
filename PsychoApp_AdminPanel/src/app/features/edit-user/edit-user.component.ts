@@ -3,13 +3,14 @@ import {ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { EditUserService } from './edit-user.service';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 
 
 @Component({
   selector: 'app-edit-user',
   standalone: true,
-  imports: [MatFormFieldModule,ReactiveFormsModule,RouterModule],
+  imports: [MatFormFieldModule,ReactiveFormsModule,RouterModule,TranslatePipe],
   templateUrl: './edit-user.component.html',
   styleUrl: './edit-user.component.css'
 })
@@ -30,8 +31,10 @@ export class EditUserComponent implements OnInit {
   constructor(
     private editUserService: EditUserService,
     private route: ActivatedRoute,
-    private router: Router
-  ) { }
+    private router: Router,
+    private translate: TranslateService
+  ) {
+   }
 
   ngOnInit(): void {
     // دریافت شناسه کاربر از پارامترهای URL

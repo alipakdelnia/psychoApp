@@ -1,7 +1,7 @@
 <div
   class="relative overflow-x-auto shadow-md sm:rounded-lg m-10 dark:bg-gray-900"
 >
-  <h1 class="text-2xl font-bold text-gray-200 text-center mt-4">User List</h1>
+  <h1 class="text-2xl font-bold text-gray-200 text-center mt-4">{{'USER_LIST'|translate}}</h1>
   <div
     class="flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900"
   >
@@ -13,7 +13,7 @@
         type="button"
       >
         <span class="sr-only">Action button</span>
-        Action
+        {{'ACTION'|translate}}
         <svg
           class="w-2.5 h-2.5 ms-2.5"
           aria-hidden="true"
@@ -95,7 +95,7 @@
         type="text"
         id="table-search-users"
         class="block p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        placeholder="Search for users"
+        placeholder="{{'SEARCH_FOR_USER'|translate}}"
       />
     </div>
   </div>
@@ -116,12 +116,12 @@
             <label for="checkbox-all-search" class="sr-only">checkbox</label>
           </div>
         </th>
-        <th scope="col" class="px-6 py-3">Id</th>
-        <th scope="col" class="px-6 py-3">Name</th>
-        <th scope="col" class="px-6 py-3">Email</th>
-        <th scope="col" class="px-6 py-3">CeatedDate</th>
-        <th scope="col" class="px-6 py-3">LastLogin</th>
-        <th scope="col" class="px-6 py-3">Edit</th>
+        <th scope="col" class="px-6 py-3">{{'ID'|translate}}</th>
+        <th scope="col" class="px-6 py-3">{{'NAME'|translate}}</th>
+        <th scope="col" class="px-6 py-3">{{'EMAIL'|translate}}</th>
+        <th scope="col" class="px-6 py-3">{{'CREATED_DATE'|translate}}</th>
+        <th scope="col" class="px-6 py-3">{{'LAST_LOGIN'|translate}}</th>
+        <th scope="col" class="px-6 py-3">{{'EDIT'|translate}}</th>
       </tr>
     </thead>
     <tbody>
@@ -174,7 +174,7 @@
           <a
             [routerLink]="['/edit-user', user.id]"
             class="font-medium text-blue-500 dark:text-blue-700 hover:underline"
-            >Edit user</a
+            >{{'EDIT_USER'|translate}}</a
           >
         </td>
       </tr>

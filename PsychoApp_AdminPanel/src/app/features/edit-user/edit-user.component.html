@@ -1,8 +1,8 @@
 <div class="max-w-lg mx-auto mt-10 p-6 dark:bg-gray-900 shadow-lg rounded-lg">
-    <h2 class="text-xl font-bold mb-4 dark:text-white">Edit User {{ userId }} </h2>
+    <h2 class="text-xl font-bold mb-4 dark:text-white">{{'EDIT_USER'|translate}} {{ userId }} </h2>
     <form [formGroup]="editForm" (ngSubmit)="onSubmit()" >
       <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="firstName">First Name</label>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="firstName">{{'FIRST_NAME'|translate}}</label>
         <input
           id="firstName"
           type="text"
@@ -12,7 +12,7 @@
         />
       </div>
       <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="lastName">Last Name</label>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="lastName">{{'LAST_NAME'|translate}}</label>
         <input
           id="lastName"
           type="text"
@@ -22,7 +22,7 @@
         />
       </div>
       <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="username">Username</label>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="username">{{'USERNAME'|translate}}</label>
         <input
           id="username"
           type="text"
@@ -32,7 +32,7 @@
         />
       </div>
       <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="email">Email</label>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="email">{{'EMAIL'|translate}}</label>
         <input
           id="email"
           type="text"
@@ -43,7 +43,7 @@
       </div>
       
       <div class="mb-4">
-        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="passwordHash">Password</label>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="passwordHash">{{'PASSWORD'|translate}}</label>
         <input
           id="passwordHash"
           type="text"
@@ -56,7 +56,7 @@
         type="submit"
         class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600"
       >
-        Update User
+       {{'UPDATE_USER'|translate}}
       </button>
     </form>
   </div>

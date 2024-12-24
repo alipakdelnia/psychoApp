@@ -7,6 +7,14 @@
     "CREATED_DATE": "Created Date",
     "LAST_LOGIN": "Last Login",
     "EDIT": "Edit",
-    "EDIT_USER": "Edit User"
+    "EDIT_USER": "Edit User",
+    "ACTION": "Action",
+    "USER_LIST": "User List",
+    "SEARCH_FOR_USER": "Search for user",
+    "FIRST_NAME": "First Name",
+    "LAST_NAME": "Last Name",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "UPDATE_USER": "Update User"
   }
   

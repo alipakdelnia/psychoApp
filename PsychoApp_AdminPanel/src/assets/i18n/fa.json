@@ -7,6 +7,14 @@
     "CREATED_DATE": "تاریخ ایجاد",
     "LAST_LOGIN": "آخرین ورود",
     "EDIT": "ویرایش",
-    "EDIT_USER": "ویرایش کاربر"
+    "EDIT_USER": "ویرایش کاربر",
+    "ACTION": "عملیات",
+    "USER_LIST": "لیست کاربران",
+    "SEARCH_FOR_USER": "جستجوی کاربر",
+    "FIRST_NAME": "نام",
+    "LAST_NAME": "نام خانوادگی",
+    "USERNAME": "نام کاربری",    
+    "PASSWORD": "رمز عبور",
+    "UPDATE_USER": "ویرایش کاربر"
   }
   
