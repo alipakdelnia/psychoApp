@@ -5,5 +5,5 @@ import { EditUserComponent } from './features/edit-user/edit-user.component';
 export const routes: Routes = [
     {  path: 'userlist', component: UsersComponent},
     { path: 'edit-user/:id', component: EditUserComponent },
-    { path: '**', redirectTo: '', pathMatch: 'full' }
+    { path: '**', redirectTo: 'userlist', pathMatch: 'full' }
 ];
