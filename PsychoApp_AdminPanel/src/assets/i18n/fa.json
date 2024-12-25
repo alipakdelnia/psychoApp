@@ -19,6 +19,7 @@
     "DELETE_USER": "حذف کاربر",
     "ADD_NEW_USER": "افزودن کاربر جدید",
     "ENTER": "وارد کردن",
-    "SUBMIT":"ثبت"
+    "SUBMIT":"ثبت",
+    "DELETE_SELECTED":"پاک کردن"
   }
   

@@ -14,6 +14,7 @@ import { TranslateDirective, TranslatePipe, TranslateService } from '@ngx-transl
 })
 export class UsersComponent implements OnInit {
   users: any[] = [];
+  allSelected: boolean = false; // وضعیت چک‌باکس هدر
 
   constructor(private usersService: UsersService, private translate: TranslateService,private router: Router) {
 
@@ -28,5 +29,12 @@ export class UsersComponent implements OnInit {
   addNewUser() {
     this.router.navigate(['add-new-user'])
   }
+
+  deleteUser(): void {
+    console.log('Delete button clicked!');
+    // عملکرد حذف کاربر (یا هر عملکرد مورد نظر) را اینجا اضافه کنید
+  }
+  
+  
 
 }
