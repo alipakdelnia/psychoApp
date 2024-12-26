@@ -20,6 +20,7 @@
     "ADD_NEW_USER": "Add New User",
     "ENTER": "Enter",
     "SUBMIT":"Submit",
-    "DELETE_SELECTED":"Delete selected"
+    "DELETE_SELECTED":"Delete selected",
+    "REFRESH":"Refresh"
   }
   

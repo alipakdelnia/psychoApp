@@ -17,4 +17,8 @@ export class UsersService {
     return this.http.post<any>("http://localhost:5087/api/users", user);
   }
 
+  deleteUser(userId: number): Observable<any> {
+    return this.http.delete<any>(`http://localhost:5087/api/users/${userId}`);
+  }
+
 }

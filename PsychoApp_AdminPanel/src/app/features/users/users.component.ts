@@ -30,9 +30,8 @@ export class UsersComponent implements OnInit {
     this.router.navigate(['add-new-user'])
   }
 
-  deleteUser(): void {
-    console.log('Delete button clicked!');
-    // عملکرد حذف کاربر (یا هر عملکرد مورد نظر) را اینجا اضافه کنید
+  refreshPage(): void {
+    console.log('refresh button clicked!');
   }
   
   
