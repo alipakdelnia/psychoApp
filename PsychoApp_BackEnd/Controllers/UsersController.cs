@@ -52,7 +52,7 @@ namespace psychoApp.Controllers
         {
             if (id != user.Id)
             {
-                return BadRequest(new {message = "User ID does not match."});
+                return BadRequest(new { message = "User ID does not match." });
             }
 
             _context.Entry(user).State = EntityState.Modified;
@@ -65,7 +65,7 @@ namespace psychoApp.Controllers
             {
                 if (!UserExists(id))
                 {
-                    return NotFound(new {message = "User not found."});
+                    return NotFound(new { message = "User not found." });
                 }
                 else
                 {
@@ -73,7 +73,7 @@ namespace psychoApp.Controllers
                 }
             }
 
-            return Ok(new {Success=true,message = "User updated successfully.",updatedUser = user});
+            return Ok(new { Success = true, message = "User updated successfully.", updatedUser = user });
         }
 
         // POST: api/Users
@@ -136,13 +136,17 @@ namespace psychoApp.Controllers
             var user = await _context.Users.FindAsync(id);
             if (user == null)
             {
-                return NotFound();
+                return NotFound(new { Success = false, message = "User not found." });
             }
 
-            _context.Users.Remove(user);
+            user.IsDeleted = true;
+            user.DeletedAt = DateTime.UtcNow;
+            _context.Users.Update(user);
+
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(new { Success = true, message = "User deleted successfully (soft deleted)." });
+
         }
 
         private bool UserExists(int id)
