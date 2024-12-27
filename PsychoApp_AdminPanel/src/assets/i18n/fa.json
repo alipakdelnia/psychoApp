@@ -21,6 +21,15 @@
     "ENTER": "وارد کردن",
     "SUBMIT":"ثبت",
     "DELETE_SELECTED":"پاک کردن",
-    "REFRESH":"بروزرسانی"
+    "REFRESH":"بروزرسانی",
+   "CONFIRM_ACTION":"تایید عملیات",
+   "ARE_YOU_SURE_YOU_WANT_TO_PROCEED":"آیا مطمئن هستید؟",
+   "YES":"بله",
+   "NO":"خیر" ,
+   "DELETE":"حذف",
+   "ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_USER":"آیا مطمئن هستید که میخواهید این کاربر را حذف کنید؟",
+   "CANCEL":"لغو",
+   "USER_NOT_FOUND":"کاربر یافت نشد",
+   "USER_DELETED_SUCCESSFULLY":"کاربر با موفقیت حذف شد"
   }
   

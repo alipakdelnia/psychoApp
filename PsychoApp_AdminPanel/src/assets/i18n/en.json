@@ -21,6 +21,14 @@
     "ENTER": "Enter",
     "SUBMIT":"Submit",
     "DELETE_SELECTED":"Delete selected",
-    "REFRESH":"Refresh"
+    "REFRESH":"Refresh",
+   "CONFIRM_ACTION":"Confirm Action",
+   "ARE_YOU_SURE_YOU_WANT_TO_PROCEED":"Are you sure you want to proceed?",
+   "YES":"Yes",
+   "NO":"No",
+   "DELETE":"Delete",
+   "ARE_YOU_SURE_YOU_WANT_TO_DELETE_THIS_USER":"Are you sure you want to delete this user?",
+   "CANCEL":"Cancel"
+
   }
   
