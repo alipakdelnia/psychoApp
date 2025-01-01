@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -146,6 +147,21 @@ namespace psychoApp.Controllers
             await _context.SaveChangesAsync();
 
             return Ok(new { Success = true, message = "User deleted successfully (soft deleted)." });
+
+        }
+
+        //Get notes
+        [HttpGet("{id}/notes")]
+        public async Task<ActionResult<IEnumerable<Note>>> GetUserNotes (int id)
+        {
+            var user = await _context.Users.Include(u => u.Notes).FirstOrDefaultAsync(u => u.Id == id);
+
+            if (user == null)
+            {
+                return NotFound(new { Success = false, message = "user not found/" });
+            }
+
+            return Ok(new { Success = true, Notes = user.Notes });
 
         }
 

@@ -10,5 +10,9 @@ namespace psychoApp.Models
         public string PasswordHash { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime? LastLogin { get; set; }
+
+        //navigation prop for Note
+        public ICollection<Note> Notes{ get; set; }
+
     }
 }
