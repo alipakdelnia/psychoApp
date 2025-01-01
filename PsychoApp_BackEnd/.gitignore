@@ -1,0 +1,29 @@
+# Ignore obj directory
+obj/
+
+# Ignore bin directory
+bin/
+
+# Ignore build output and temporary files
+bin/
+obj/
+*.cache
+*.user
+*.suo
+
+# Ignore NuGet package folders
+*.nupkg
+project.lock.json
+*.nuget.dgspec.json
+*.nuget.g.props
+*.nuget.g.targets
+
+# Ignore Rider/VSCode IDE specific files
+.idea/
+.vscode/
+
+# Ignore generated files
+*.AssemblyInfo.cs
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
