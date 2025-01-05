@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using psychoApp.Data;
+using psychoApp.Interfaces;
 using psychoApp.Models;
+
 namespace psychoApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class NotesController : ControllerBase
+    public class NotesController : ControllerBase, INotesController
     {
         private readonly AppDbContext _context;
 
@@ -20,45 +17,26 @@ namespace psychoApp.Controllers
             _context = context;
         }
 
-        //Get : api/Notes
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Note>>> GetNotes()
+        public async Task<ActionResult<IEnumerable<Note>>> GetAllNotesAsync()
         {
             return await _context.Notes.ToListAsync();
         }
-     
 
-        //Get : api/Notes/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Note>> GetNote(int id)
+        public async Task<ActionResult<Note>> GetNoteByIdAsync(int id)
         {
             var note = await _context.Notes.FindAsync(id);
-
-            if(note == null)
-            {
-                return NotFound(new { Success = false, message = "note not found!!!" });
-            }
-
-            return note;
-
+            return note == null ? NotFound(new { Success = false, message = "Note not found." }) : Ok(note);
         }
 
-        //post : api/Notes
-        [HttpPost]
-        public async Task<ActionResult<Note>> PostNote(Note note)
+        public async Task<ActionResult<Note>> CreateNoteAsync(Note note)
         {
             _context.Notes.Add(note);
             await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetNote", new { id = note.Id }, note);
-            
+            return CreatedAtAction(nameof(GetNoteByIdAsync), new { id = note.Id }, note);
         }
 
-        //post 
-        [HttpPost("create-note")]
-        public async Task<IActionResult> CreateNote([FromQuery] int userId, [FromBody] NoteDto noteDto)
+        public async Task<IActionResult> CreateNoteWithUserAsync(int userId, NoteDto noteDto)
         {
-
             var user = await _context.Users.FindAsync(userId);
             if (user == null)
             {
@@ -73,35 +51,29 @@ namespace psychoApp.Controllers
                 UserId = userId
             };
 
-           
             _context.Notes.Add(note);
-          
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetNote", new { id = note.Id }, note);
+            return CreatedAtAction(nameof(GetNoteByIdAsync), new { id = note.Id }, note);
         }
 
-
-        //put : api/Notes/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutNote(int id,Note note)
+        public async Task<IActionResult> UpdateNoteAsync(int id, Note note)
         {
-            if (id != note.Id)  
+            if (id != note.Id)
             {
-                return BadRequest(new { Success = false, message = "Note Id Mismatch..." });
+                return BadRequest(new { Success = false, message = "Note ID mismatch." });
             }
 
             _context.Entry(note).State = EntityState.Modified;
-
             try
             {
                 await _context.SaveChangesAsync();
             }
-            catch(DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException)
             {
                 if (!NoteExists(id))
                 {
-                    return NotFound(new { Success = false, message = "Note not found!" });
+                    return NotFound(new { Success = false, message = "Note not found." });
                 }
                 else
                 {
@@ -109,28 +81,23 @@ namespace psychoApp.Controllers
                 }
             }
 
-            return Ok(new { Success = true, message = "note updated successfully.", note });
-
+            return Ok(new { Success = true, message = "Note updated successfully.", note });
         }
 
-        //Delete : api/Notes/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteNote (int id)
+        public async Task<IActionResult> DeleteNoteAsync(int id)
         {
             var note = await _context.Notes.FindAsync(id);
             if (note == null)
             {
-                return NotFound(new { Success = false, message = "note not found////" });
+                return NotFound(new { Success = false, message = "Note not found." });
             }
 
             note.IsDeleted = true;
             note.DeletedAt = DateTime.UtcNow;
-
             _context.Notes.Update(note);
             await _context.SaveChangesAsync();
 
-            return Ok(new { success = true, message = "note deleted ,,", });
-
+            return Ok(new { Success = true, message = "Note soft-deleted successfully." });
         }
 
         private bool NoteExists(int id)
