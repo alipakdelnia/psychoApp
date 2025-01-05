@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using psychoApp.Data;
+using psychoApp.Middleware;
 using psychoApp.Models;
 using psychoApp.Services;
 using System.ComponentModel;
@@ -27,6 +28,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<TokenService>();
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+//for error handling and logging
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
+builder.Services.AddLogging();
+
 
 var app = builder.Build();
 
@@ -41,6 +49,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 
 }
+
+app.UseHttpsRedirection();
 
 app.UseHttpsRedirection();
 
