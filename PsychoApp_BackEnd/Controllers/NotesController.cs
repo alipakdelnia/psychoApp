@@ -17,17 +17,22 @@ namespace psychoApp.Controllers
             _context = context;
         }
 
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Note>>> GetAllNotesAsync()
         {
             return await _context.Notes.ToListAsync();
         }
 
+
+        [HttpGet("{id}")]
         public async Task<ActionResult<Note>> GetNoteByIdAsync(int id)
         {
             var note = await _context.Notes.FindAsync(id);
             return note == null ? NotFound(new { Success = false, message = "Note not found." }) : Ok(note);
         }
 
+
+        [HttpPost]
         public async Task<ActionResult<Note>> CreateNoteAsync(Note note)
         {
             _context.Notes.Add(note);
@@ -35,6 +40,7 @@ namespace psychoApp.Controllers
             return CreatedAtAction(nameof(GetNoteByIdAsync), new { id = note.Id }, note);
         }
 
+        [HttpPost("create-with-user")]
         public async Task<IActionResult> CreateNoteWithUserAsync(int userId, NoteDto noteDto)
         {
             var user = await _context.Users.FindAsync(userId);
@@ -57,6 +63,7 @@ namespace psychoApp.Controllers
             return CreatedAtAction(nameof(GetNoteByIdAsync), new { id = note.Id }, note);
         }
 
+        [HttpPut("{id}")]
         public async Task<IActionResult> UpdateNoteAsync(int id, Note note)
         {
             if (id != note.Id)
@@ -84,6 +91,7 @@ namespace psychoApp.Controllers
             return Ok(new { Success = true, message = "Note updated successfully.", note });
         }
 
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteNoteAsync(int id)
         {
             var note = await _context.Notes.FindAsync(id);

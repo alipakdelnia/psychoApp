@@ -6,6 +6,8 @@ obj/
 *.suo
 *.log
 
+bin/
+
 # Ignore NuGet package folders and generated files
 *.nupkg
 project.lock.json
@@ -37,3 +39,11 @@ TestResults/
 
 # Ignore publish output folders
 publish/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+FileContentIndex

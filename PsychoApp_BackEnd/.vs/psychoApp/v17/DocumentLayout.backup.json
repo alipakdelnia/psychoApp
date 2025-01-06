@@ -3,48 +3,20 @@
   "WorkspaceRootPath": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\psychoapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:psychoapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\models\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:models\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\interfaces\\inotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:interfaces\\inotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|c:\\src\\psychoapp\\psychoapp_backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00523618-5149-43D6-9283-B871F02867F0}|psychoApp.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,142 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-01T11:14:06.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "psychoApp.http",
-              "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\psychoApp.http",
-              "RelativeDocumentMoniker": "psychoApp.http",
-              "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\psychoApp.http",
-              "RelativeToolTip": "psychoApp.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-01-01T11:13:54.659Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-01T11:13:42.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-01T11:13:39.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T11:13:23.948Z",
+              "WhenOpened": "2025-01-06T06:53:04.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NoteDto.cs",
-              "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Models\\NoteDto.cs",
-              "RelativeDocumentMoniker": "Models\\NoteDto.cs",
-              "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Models\\NoteDto.cs",
-              "RelativeToolTip": "Models\\NoteDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "INotesController.cs",
+              "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Interfaces\\INotesController.cs",
+              "RelativeDocumentMoniker": "Interfaces\\INotesController.cs",
+              "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Interfaces\\INotesController.cs",
+              "RelativeToolTip": "Interfaces\\INotesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T10:55:40.525Z"
+              "WhenOpened": "2025-01-06T06:46:03.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "NotesController.cs",
               "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Controllers\\NotesController.cs",
               "RelativeDocumentMoniker": "Controllers\\NotesController.cs",
               "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Controllers\\NotesController.cs",
               "RelativeToolTip": "Controllers\\NotesController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAqwD4AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T09:20:19.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T09:08:44.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T09:07:39.529Z",
+              "WhenOpened": "2025-01-06T06:43:52.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Note.cs",
-              "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Models\\Note.cs",
-              "RelativeDocumentMoniker": "Models\\Note.cs",
-              "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Models\\Note.cs",
-              "RelativeToolTip": "Models\\Note.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T09:05:25.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\src\\psychoApp\\PsychoApp_BackEnd\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAqwHsAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wAAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T09:04:08.571Z"
+              "WhenOpened": "2025-01-06T06:42:42.987Z",
+              "EditorCaption": ""
             }
           ]
         }

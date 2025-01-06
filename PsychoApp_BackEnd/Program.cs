@@ -50,9 +50,7 @@ if (app.Environment.IsDevelopment())
 
 }
 
-app.UseHttpsRedirection();
-
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.MapGet("/", () => "Ali's API works!");
 
