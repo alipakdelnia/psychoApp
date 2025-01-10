@@ -17,6 +17,7 @@ namespace psychoApp.Controllers
             _context = context;
         }
 
+//http : get all notes
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Note>>> GetAllNotesAsync()
         {
