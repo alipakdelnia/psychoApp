@@ -6,6 +6,7 @@ obj/
 *.suo
 *.log
 
+
 bin/
 
 # Ignore NuGet package folders and generated files
