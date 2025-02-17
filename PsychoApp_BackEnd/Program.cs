@@ -23,6 +23,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddControllers().AddJsonOptions(x =>
 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+
+builder.Services.AddSingleton<WebSocketService>();
+
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -54,5 +57,9 @@ if (app.Environment.IsDevelopment())
 
 app.MapGet("/", () => "Ali's API works!");
 
+app.UseWebSockets();
+app.UseMiddleware<WebSocketMiddleware>();
+
 app.MapControllers();
+
 app.Run();
