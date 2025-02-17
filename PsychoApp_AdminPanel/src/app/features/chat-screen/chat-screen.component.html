@@ -1,0 +1,8 @@
+<div class="chat-container">
+    <h2>WebSocket Chat</h2>
+    <div class="messages">
+      <div *ngFor="let msg of messages">{{ msg }}</div>
+    </div>
+  
+    <button (click)="sendMessage()">Send</button>
+  </div>

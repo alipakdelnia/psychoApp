@@ -13,7 +13,7 @@ import { DeleteDialogComponent } from '../../shared/delete-dialog/delete-dialog.
   templateUrl: './users.component.html',
   styleUrl: './users.component.css'
 })
-export class UsersComponent implements OnInit {
+export class UsersComponent {
   users: any[] = [];
   allSelected: boolean = false; // وضعیت چک‌باکس هدر
   isDialogVisible: boolean = false;
@@ -23,7 +23,7 @@ export class UsersComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     this.refreshPage();
   }
 
