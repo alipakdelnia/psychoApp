@@ -54,6 +54,8 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+builder.Services.AddAuthentication();
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 //for error handling and logging

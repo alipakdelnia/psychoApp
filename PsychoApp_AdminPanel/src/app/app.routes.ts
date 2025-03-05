@@ -9,5 +9,5 @@ export const routes: Routes = [
     { path: 'edit-user/:id', component: EditUserComponent },
     { path: 'add-new-user', component: AddNewUserComponent },
     {path : 'chat-screen', component: ChatScreenComponent},
-    { path: '**', redirectTo: 'chat-screen', pathMatch: 'full' }
+    { path: '**', redirectTo: 'userlist', pathMatch: 'full' }
 ];
